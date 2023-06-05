@@ -1,0 +1,219 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root {
+  --navbar-height: 59px;
+}
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+/* Logo and Image */
+#logo {
+  margin: 10px 34px;
+}
+#logo img {
+  height: 59px;
+  margin: 3px 6px;
+  border-radius: 11px;
+  opacity: 3.8;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+  display: flex;
+  font-family: "Inconsolata", monospace;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  top: 0px;
+  left: 0px;
+}
+#navbar ul li {
+  /* color: whitesmoke; */
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a {
+  display: block;
+  color: white;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: antiquewhite;
+}
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+#home::before {
+  content: "";
+  background: url("pizza.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 642px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+#home h1 {
+  color: white;
+  text-align: center;
+  font-family: "Cabin", sans-serif;
+}
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Cabin", sans-serif;
+}
+/* Services Section */
+#services {
+  margin: 0px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid brown;
+  padding: 25px;
+  margin: 25px 6px;
+  border-radius: 12px;
+  background-color: rgb(255 246 246);
+}
+#services .box img {
+  height: 160px;
+  display: block;
+  margin: auto;
+}
+#services .box p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Client Section */
+
+#client-section {
+  height: 400px;
+  position: relative;
+}
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url("bb.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 85%;
+  z-index: -1;
+  opacity: 0.3;
+}
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -51px;
+}
+.client-item {
+  padding: 45px;
+}
+#clients img {
+  height: 87px;
+}
+
+/* Contact Section */
+
+#contact {
+  position: rel ative;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 103%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url("https://cdn.pixabay.com/photo/2019/05/10/14/23/contact-us-4193637_960_720.jpg")
+    no-repeat center center/cover;
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 11px;
+  font-size: 1.1rem;
+}
+#contact-box form {
+  width: 40%;
+}
+#contact-box label {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.3rem;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+/* Utility Class */
+.h-primary {
+  font-size: 3.8rem;
+  padding: 87px;
+  font-family: "Inconsolata", monospace;
+}
+
+.h-secondary {
+  font-size: 2.5rem;
+  padding: 12px;
+  font-family: "Inconsolata", monospace;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: brown;
+  color: white;
+  margin: 55px;
+  font-size: 1.5rem;
+  border-radius: 11px;
+  cursor: pointer;
+}
+.btn:hover {
+  color: black;
+  background-color: rgb(243, 188, 117);
+  transition: all 0.8s;
+}
+.center {
+  text-align: center;
+}
